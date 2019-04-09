@@ -83,5 +83,28 @@
         
     - import package.module
         - 导入包中某一个具体的模块
+        - 使用方法
         
+                package.module.func_name
+                package.module.class.fun()
+                package.module.class.var
+        -案例
         
+    - import package.module as pm
+    
+        
+- from ... import 导入
+    - from package import module, module2, module3, .....
+    - 此种导入方法不执行__init__的内容
+    
+            from pkg01 import p01
+            p01.sayHello() 
+    - from package import *
+        - 导入当前包 '__init__.py'文件中所有的函数和类
+        - 使用方法
+            
+                func_name()
+                class_name.func_name()
+                class_name.var
+                
+        - 案例p09.py， 注意此种导入的具体内容
